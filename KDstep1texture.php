@@ -32,8 +32,10 @@
 			</div>
 			<div style='text-align:center; font-size: 20px'> ".$yarntexture[3]." </div>
 		</div>";	
-	}
-
+		if (isset($_POST[$yarntexture[2]])) {
+			header ("location: KDstep2color.php?texture=".$yarntexture[2]);
+		}
+	}	
 ?>
 
 </form>
