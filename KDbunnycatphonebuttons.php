@@ -22,7 +22,10 @@
 			<button class='buttonbackground'type='submit' name='".$itemlisting."' value='' style='background-image: url(KDimages/".$itemlisting.".JPG)'>
 			</button>
 			<div style='text-align:center'> ".$itemlisting." </div>
-		</div>";	
+		</div>";
+		if (isset($_POST[$itemlisting])) {
+			header ("location: KDstep1texture.php");
+		}	
 	}
 
 ?>

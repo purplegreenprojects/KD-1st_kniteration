@@ -113,26 +113,6 @@ if(isset ($arrayyarncolors)){
 				</button>
 			</div>
 			<div style='text-align:center'> ".$color[2]." </div>
-		</div>";
+		</div>";	
 	}
 }
-
-
-
-
-
-//Flip flop MC and CC with the click of a button... at the bottom of step 3
-
-
-
-?>
-</form>
-</body>
-</html>
-
-
-
-
-
-
-
