@@ -12,20 +12,18 @@
 	<div style= 'font-size:28px'> Choose Contrasting Color Areas </div> 
 <hr>
 
-<div style= 'float: right; height: 500px; width: 500px; background-color:black'>
-	<div style= 'position: absolute; background-image: url(https://d2d00szk9na1qq.cloudfront.net/Product/4c7672af-4a79-4677-ba94-b32238b6072e/Images/Medium_0326187.jpg)' id='cookiecuttercatprofile'>
-		<img id= 'cclbp' src= 'https://d2d00szk9na1qq.cloudfront.net/Product/7deac14c-a209-45a0-9db0-7c259e5ba7e8/Images/Medium_LBY-205.jpg'>
-		<img id= 'ccrbp' src= 'https://d2d00szk9na1qq.cloudfront.net/Product/7deac14c-a209-45a0-9db0-7c259e5ba7e8/Images/Medium_LBY-205.jpg'>
-	</div>
+<div style:'text-align:left'>
+	<input type='checkbox' name='cclbp'> Back Paw (Left)
+	<br>
+	<input type='checkbox' name='ccrbp'> Back Paw (Right)
+</div>
 
-		<div style= 'background-color:blue' id= 'ccrbp'>  
-			<div style= 'background-color:blue' id= 'cclbp'> 
-				<div style= 'background-color:blue' id= 'ccstomach'> 
-				</div>
-			</div> 
-		</div> 
-	</div>
-
+<div style= 'float: right; height: 500px; width: 500px; background-color:grey'>
+	<div style= 'background-image: url(https://d2d00szk9na1qq.cloudfront.net/Product/2af5de9f-faca-4854-90f3-bb3e79ab04bc/Images/Medium_LBY-253.jpg)' id='cookiecuttercatprofile' class='catpart'></div>
+	<div style= 'background-color:green' id= 'ccchest' class='catpart'></div>
+	<div style= 'background-color:blue' id= 'ccchin' class='catpart'></div>
+	<div style= 'background-color:red' id= 'cctail' class='catpart'></div>
+</div>
 
 </body>
 </html>

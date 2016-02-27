@@ -16,7 +16,8 @@
 <form method='post'>
 
 <?php
-	$arrayitemlisting = array('Bunny', 'Cat');
+	include("arrays.php");
+
 	foreach ($arrayitemlisting as $itemlisting) {
 		echo "<div class='chooseKD'>
 			<button class='buttonbackground'type='submit' name='".$itemlisting."' value='' style='background-image: url(KDimages/".$itemlisting.".JPG)'>

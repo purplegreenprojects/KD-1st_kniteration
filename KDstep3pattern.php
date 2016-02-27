@@ -12,8 +12,22 @@
 	<div style= 'font-size:28px'> Choose Contrasting Color Areas </div> 
 <hr>
 
-<div style= 'float: right; height: 500px; width: 500px; background-color: black'>
-	
-	<div style= "background-image: url([$color[1]])" id="cookiecuttercatprofile"> </div> 
+<?php
 
-</div>
+	$hidden = "hidden";
+
+	echo "<div style= 'float: right; height: 500px; width: 500px; background-color:grey'>
+			<div style='position: absolute; background-image: url(http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59610-162059-B-PIP-LemonSwirl.jpg);' id='cookiecuttercatprofile' class='catpart'> </div>
+			<div style= 'background-color:white' id= 'cclbp' class='".$cclbp_hide." catpart'></div>
+			<div style= 'background-color:white' id= 'ccrbp' class='".$ccrbp_hide." catpart'></div>
+			<div style= 'background-color:white' id= 'cclfp' class='".$cclfp_hide."catpart'></div>
+			<div style= 'background-color:white' id= 'ccrfp' class='".$ccrfp_hide."catpart'></div>
+			<div style= 'background-color:white' id= 'ccstomach' class='".$ccstomachchin_hide."catpart'></div>
+			<div style= 'background-color:white' id= 'ccchest' class=".$ccstomachchin_hide."'catpart'></div>
+			<div style= 'background-color:white' id= 'ccchin' class='".$ccstomachchin_hide." catpart'></div>
+			<div style= 'background-color:white' id= 'cctail' class='".$cctail_hide." catpart'></div>
+		</div>";
+?>
+
+</body>
+</html>

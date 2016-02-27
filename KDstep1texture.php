@@ -14,12 +14,7 @@
 <form method='post'>
 
 <?php
-		$arraypipsqueak = array("Extra Fuzzy", "pipsqueak.jpg", "pipsqueak", "Bernat Pipsqueak");
-		$arrayhomespun = array("Moderately Fuzzy", "homespun.jpg", "homespun", "Lion Brand Homespun");
-		$arraycaron = array("Smooth", "caron.jpg", "caron", "Caron Simply Soft");
-		$arrayparfait = array("Corduroy", "parfait.jpg", "parfait", "Premier Parfait");	
-
-	$arrayyarntextures = array($arraypipsqueak, $arrayhomespun, $arrayparfait, $arraycaron);
+	include("arrays.php");
 
 	foreach ($arrayyarntextures as $yarntexture) {
 		echo "<div class='chooseKD'style= 'width: 22%; height: 50%'>
@@ -31,7 +26,8 @@
 				</button>
 			</div>
 			<div style='text-align:center; font-size: 20px'> ".$yarntexture[3]." </div>
-		</div>";	
+		</div>";
+			
 		if (isset($_POST[$yarntexture[2]])) {
 			header ("location: KDstep2color.php?texture=".$yarntexture[2]);
 		}
