@@ -59,7 +59,7 @@
 				$arraygrey = array("carongrey", "http://demandware.edgesuite.net/sits_joann/dw/image/v2/AAMM_PRD/on/demandware.static/-/Sites-joann-product-catalog/default/dwb66ad859/images/hi-res/62/6206171.jpg?sw=350&sh=350&sm=fit", "Grey");
 				$arraycharcoal = array("caroncharcoal", "http://demandware.edgesuite.net/sits_joann/dw/image/v2/AAMM_PRD/on/demandware.static/-/Sites-joann-product-catalog/default/dw189b7ad7/images/hi-res/12/12436713.jpg?sw=350&sh=350&sm=fit", "Charcoal");
 				$arrayblack = array("caronblack", "http://demandware.edgesuite.net/sits_joann/dw/image/v2/AAMM_PRD/on/demandware.static/-/Sites-joann-product-catalog/default/dw79e9545a/images/hi-res/54/5408216.jpg?sw=350&sh=350&sm=fit", "Black");
-				$arraypumpkin = array("caronpumkin", "http://demandware.edgesuite.net/sits_joann/dw/image/v2/AAMM_PRD/on/demandware.static/-/Sites-joann-product-catalog/default/dwedd0ef6e/images/hi-res/12/12664496.jpg?sw=350&sh=350&sm=fit", "Pumpkin");
+				$arraypumpkin = array("caronpumpkin", "http://demandware.edgesuite.net/sits_joann/dw/image/v2/AAMM_PRD/on/demandware.static/-/Sites-joann-product-catalog/default/dwedd0ef6e/images/hi-res/12/12664496.jpg?sw=350&sh=350&sm=fit", "Pumpkin");
 
 			$arraycaroncolors = array($arraycwhite, $arrayoffwhite, $arraybone, $arraysunshine, $arraygold, $arraygrey, $arraycharcoal, $arrayblack, $arraypumpkin);
 

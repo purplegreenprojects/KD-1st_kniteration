@@ -72,6 +72,9 @@
 					<div style='text-align:center'> ".$color[2]." </div>
 				</div>";	
 			}
+			if(isset($_POST[$color[0]])) {
+				header ("location: KDstep3pattern.php?texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$color[0]);
+			}
 		}
 	}
 

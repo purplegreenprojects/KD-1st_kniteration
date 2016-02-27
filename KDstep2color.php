@@ -57,8 +57,6 @@
 
 // ^that just creates all the buttons for the colors options, right? Yes. $color only works within the foreach
 
-
-
 			if(isset($_POST[$color[0]])) {
 				header ("location: KDstep2cc.php?texture=".$_GET["texture"]."&maincolor=".$color[0]);
 			}
