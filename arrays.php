@@ -20,7 +20,7 @@
 				$arraylime = array("pipsqueaklime", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59222-162059-B-PIP-LimeGreen.jpg", "Lime");
 				$arraygrape = array("pipsqueakgrape", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/s/w/sw-59332-162059-bernat-pipsqueak-grape.jpg", "Grape");
 				$arraybabyblue = array("pipsqueakbabyblue", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59128-162059-B-PIP-BabyBlue.jpg", "Baby Blue");
-				$arraybabypink = array("pipsqueakbabpink", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59421-162059-B-PIP-TickleMePink_1.jpg", "Pink");		
+				$arraybabypink = array("pipsqueakbabypink", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59421-162059-B-PIP-TickleMePink_1.jpg", "Pink");		
 				$arrayblueswirl = array("pipsqueakblueswirl", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59115-162059-B-PIP-BlueJeansSwirl_1.jpg", "Blue Swirl");
 				$arraypinkswirl = array("pipsqueakpinkswirl", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/s/w/sw-58413-162058-b-pip-pinkswirl-copy.jpg", "Pink Swirl");
 				$arraydenim = array("pipsqueakdenim", "http://yarnspirations.s3.amazonaws.com/catalog/product/cache/1/thumbnail/150x/9df78eab33525d08d6e5fb8d27136e95/S/W/SW-59114-162059-B-PIP-Denim.jpg", "Denim");
