@@ -17,7 +17,7 @@
 	include("arrays.php");
 
 	foreach ($arrayyarntextures as $yarntexture) {
-		echo "<div class='chooseKD'style= 'width: 22%; height: 50%'>
+		echo "<div class='chooseKD'style= 'width: 30%; height: 50%'>
 				<div class='itemlabel' style= 'font-size: 32px'> 
 				<b> ".$yarntexture[0]." </b> 
 			</div>

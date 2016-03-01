@@ -12,7 +12,7 @@
 	<div style= 'font-size:28px'> Choose Contrasting Color Areas </div> 
 <hr>
 
-<div style:'text-align:left'>
+<div style='float:left'>
 	<input type='checkbox' name='cclbp'> Back Paw (Left)
 	<br>
 	<input type='checkbox' name='ccrbp'> Back Paw (Right)

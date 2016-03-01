@@ -20,9 +20,12 @@
 
 	foreach ($arrayitemlisting as $itemlisting) {
 		echo "<div class='chooseKD'>
-			<button class='buttonbackground'type='submit' name='".$itemlisting."' value='' style='background-image: url(KDimages/".$itemlisting.".JPG)'>
-			</button>
-			<div style='text-align:center'> ".$itemlisting." </div>
+			<div class='buttonframe'>
+				<button class='buttonbackground'type='submit' name='".$itemlisting."' value='' style='background-image: url(KDimages/".$itemlisting.".JPG)'>
+				</button>
+			</div>
+			<div style='text-align:center'> ".$itemlisting." 
+			</div>
 		</div>";
 		if (isset($_POST[$itemlisting])) {
 			header ("location: KDstep1texture.php");

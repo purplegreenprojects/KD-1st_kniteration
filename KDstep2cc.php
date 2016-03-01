@@ -15,6 +15,9 @@
 		elseif($_GET["texture"]=="parfait") {
 			$arrayyarncolors = $arrayparfaitcolors;
 		}
+		elseif($_GET["texture"]=="comfy") {
+		$arrayyarncolors = $arraycomfycolors;
+	}
 	}
 
 	if(isset ($arrayyarncolors)){
