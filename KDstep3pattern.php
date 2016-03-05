@@ -86,13 +86,25 @@
 				$ccrfp_hide = "hidden";
 			}
 //StomachChin Checkbox action
+			if (isset ($_POST["ccstomachchin_hide"])) {
+				$ccstomachchin_hide = "";
+			}
+			else {
+				$ccstomachchin_hide = "hidden";
+			}
 //Tail Checkbox action
-
+			if (isset ($_POST["cctail_hide"])) {
+				$cctail_hide = "";
+			}
+			else {
+				$cctail_hide = "hidden";
+			}
 
 // \/ will take out once i have the real checkboxes - for now, it's there so i don't get the "undefined variable" error message
 	
-	$ccstomachchin_hide = "";
-	$cctail_hide = "";
+	$ccmuzzle_hide = "";
+	$ccface_hide = "";
+
 // (^ take out)
 
 			echo "<div style='display:inline-block; height:250px; width:250px; background-color:grey'>
@@ -116,7 +128,7 @@
 <br><br>
 
 <div id='checkboxesForm' style='line-height: 200%'>
-<form method='post'>
+
 	<input type='checkbox' name='cclbp_hide'> Left Back Paw
 	<br>
 	<input type='checkbox' name='ccrbp_hide'> Right Back Paw
@@ -133,11 +145,14 @@
 	<br>
 	<input type='checkbox' name='ccface_hide'> Face
 	<br>
+
 	<input type='submit' name='previewbutton' value='Preview!'>
 
 </div>
+</form>
 
-
+<form method='post' action='KDstep4preview.php'>
+	<input type='submit' name'continuetostep4' value= 'Continue'>
 </form>
 </body>
 </html>
