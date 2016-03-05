@@ -14,9 +14,17 @@
 
 	<form method='post'>
 
-		<div style='display:inline-block; height:250px; width:250px; background-color:grey'>
-			<div style='position:absolute; background-color:white;' id='cookiecuttercatface' class:'catpart'>
-			</div>
+		<div style='display:inline-block; height:300px; width:300px; background-color:grey'>
+			<div style='position:absolute; background-color:white;' id='cookiecuttercatface' class:'catpart'> </div>
+				<div style= 'background-color:blue' id= 'ccLEFTear' class='catpart'></div>
+				<div style= 'background-color:red' id= 'catnose' class='catpart'></div>
+				<div style= 'background-color:blue' id= 'ccRIGHTear' class='catpart'></div>
+				<div style= 'background-color:black' id= 'cateyeL' class='catpart'></div>
+				<div style= 'background-color:black' id= 'cateyeR' class='catpart'></div>
+				<div style= 'background-color:orange' id= 'ccmuzzle' class='catpart'></div>
+				<div style= 'background-color:yellow' id= 'ccFACEchin' class='catpart'></div>
+				<div style= 'background-color:orange' id= 'ccFACEface' class='catpart'></div>
+				
 		</div>
 
 		<div style= 'float: right; height: 500px; width: 500px; background-color:grey'>
@@ -24,6 +32,9 @@
 			<div style= 'background-color:green' id= 'ccchest' class='catpart'></div>
 			<div style= 'background-color:blue' id= 'ccchin' class='catpart'></div>
 			<div style= 'background-color:red' id= 'cctail' class='catpart'></div>
+			<div style= 'background-color:orange' id= 'ccBODYears' class='catpart'></div>
+			<div style= 'background-color:red' id= 'ccBODYmuzzle' class='catpart'></div>
+			<div style= 'background-color:red' id= 'ccBODYface' class='catpart'></div>
 		</div>
 
 		<div id='checkboxesForm' style='line-height: 200%'>
@@ -31,6 +42,10 @@
 			<br>
 			<input type='checkbox' name='ccrbp'> Back Paw (Right)
 		</div>
+<br><br><br>
+		<div style='position:absolute; background-color:green; height:300px; width:300px'></div>
+			<div style= 'position:absolute; background-color:red' id= 'catnose' class'catpart'></div>
+
 
 </form>
 </body>
