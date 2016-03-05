@@ -9,7 +9,7 @@ body {
 
 .chooseKD {
  	width: 32%;
- 	height: 50%;
+ 	height: 65%;
  	display: inline-block;
  	margin: 15px;
 }
@@ -54,6 +54,8 @@ button {
 }
 
 #cookiecuttercatface {
+	width:250px;
+	height:250px;
   -webkit-clip-path: polygon(24% 5%, 19% 28%, 15% 37%, 14% 50%, 17% 60%, 28% 70%, 40% 74%, 60% 74%, 72% 70%, 83% 60%, 86% 50%, 85% 37%, 81% 28%, 76% 5%, 58% 25%, 42% 25%);
   clip-path: polygon(24% 5%, 19% 28%, 15% 37%, 14% 50%, 17% 60%, 28% 70%, 40% 74%, 60% 74%, 72% 70%, 83% 60%, 86% 50%, 85% 37%, 81% 28%, 76% 5%, 58% 25%, 42% 25%);
 }
@@ -141,4 +143,9 @@ clip-path: polygon(14% 9%, 18% 16%, 14% 15%);
 .catpart {
   position: absolute;
   background-size: 50px auto;
+}
+
+
+#checkboxesForm {
+width: calc(100% - 500px);
 }

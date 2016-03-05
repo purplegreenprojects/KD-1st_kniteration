@@ -12,7 +12,7 @@
 		<b> Choose the Kniterative Design You Want </b>
 	</div>
 <hr>
-<br> <br>
+<br> 
 <form method='post'>
 
 <?php
