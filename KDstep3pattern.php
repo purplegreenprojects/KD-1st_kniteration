@@ -57,25 +57,40 @@
 		<?php
 
 			$hidden = "hidden";
-
+//Left Back Paw Checkbox action
 			if (isset ($_POST["cclbp_hide"])) {
 				$cclbp_hide = "";
 			}
 			else {
 				$cclbp_hide = "hidden";
 			}
-
+//Right Back Paw Checkbox action
 			if (isset ($_POST["ccrbp_hide"])) {
 				$ccrbp_hide = "";
 			}
 			else {
 				$ccrbp_hide = "hidden";
 			}
+//Left Front Paw Checkbox action
+			if (isset ($_POST["cclfp_hide"])) {
+				$cclfp_hide = "";
+			}
+			else {
+				$cclfp_hide = "hidden";
+			}
+//Right Front Paw Checkbox action
+			if (isset ($_POST["ccrfp_hide"])) {
+				$ccrfp_hide = "";
+			}
+			else {
+				$ccrfp_hide = "hidden";
+			}
+//StomachChin Checkbox action
+//Tail Checkbox action
+
 
 // \/ will take out once i have the real checkboxes - for now, it's there so i don't get the "undefined variable" error message
 	
-	$cclfp_hide = "";
-	$ccrfp_hide = "";
 	$ccstomachchin_hide = "";
 	$cctail_hide = "";
 // (^ take out)
