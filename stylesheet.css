@@ -68,38 +68,68 @@ button {
       height:300px;
       -webkit-clip-path: polygon(44% 65%, 56% 65%, 50% 71%);
       clip-path: polygon(44% 65%, 56% 65%, 50% 71%);
+      background-color:#ffaa80
     }
 
-    #cateyeL {
+    #catnoseoutline {
+      z-index: 14;
+      width:300px;
+      height: 300px;
+      -webkit-clip-path: polygon(43% 64.5%, 57% 64.5%, 50% 72%);
+      clip-path: polygon(44% 65%, 56% 65%, 50% 71%);
+      background-color:black;
+    }
+
+    #cateyeLpupil {
       z-index: 15;
       width:300px;
       height:300px;
-      -webkit-clip-path: circle(4.0% at 41% 54%);
-      clip-path: circle(4.0% at 41% 54%);
+      -webkit-clip-path: circle(4.0% at 40% 54%);
+      clip-path: circle(4.0% at 40% 54%);
+      background-color:black;
     }
 
-    #cateyeR {
+    #cateyeLiris {
+      z-index:14;
+      width:300px;
+      height:300px;
+      -webkit-clip-path: circle(5.0% at 40% 54%);
+      clip-path: circle(5.0% at 40% 54%);
+      background-color: green;
+    }
+
+    #cateyeRpupil {
       z-index: 15;
       width:300px;
       height:300px;
-      -webkit-clip-path: circle(4.0% at 59% 54%);
-      clip-path: circle(4.0% at 59% 54%);
+      -webkit-clip-path: circle(4.0% at 60% 54%);
+      clip-path: circle(4.0% at 60% 54%);
+      background-color:black;
+    }
+
+    #cateyeRiris {
+      z-index: 14;
+      width:300px;
+      height:300px;
+      -webkit-clip-path: circle(5.0% at 60% 54%);
+      clip-path: circle(4.0% at 60% 54%);
+      background-color: green;
     }
 
     #ccLEFTear {
       z-index:11;
       width:300px;
       height:300px;
-      -webkit-clip-path: polygon(60% 31%, 76% 10%, 83% 38%);
-      clip-path: polygon(60% 31%, 76% 10%, 72% 35%);
+      -webkit-clip-path: polygon(76% 10%, 60% 31%, 66% 38%, 76% 35%, 83% 38%);
+      clip-path: polygon(76% 10%, 60% 31%, 66% 38%, 76% 35%, 83% 38%);
     }
 
     #ccRIGHTear {
       z-index:12;
       width:300px;
       height:300px;
-      -webkit-clip-path: polygon(24% 10%, 40% 31%, 17% 38%);
-      clip-path: polygon(24% 10%, 40% 31%, 28% 35%);
+      -webkit-clip-path: polygon(24% 10%, 40% 31%, 36% 38%, 26% 35%, 17% 38%);
+      clip-path: polygon(24% 10%, 40% 31%, 36% 38%, 26% 35%, 17% 38%);
     }
 
     #ccmuzzle {
@@ -122,8 +152,8 @@ button {
       z-index: 10;
       width:300px;
       height:300px;
-      -webkit-clip-path: polygon(38% 68%, 62% 68%, 55% 58%, 54% 50%, 53% 42%, 51% 37%, 49% 37%, 47% 42%, 46% 50%, 45% 58%);
-      clip-path: polygon(38% 68%, 62% 68%, 55% 58%, 54% 50%, 53% 42%, 51% 37%, 49% 37%, 47% 42%, 46% 50%, 45% 58%);
+      -webkit-clip-path: polygon(55% 58%, 54% 50%, 53% 42%, 51% 37%, 49% 37%, 47% 42%, 46% 50%, 45% 58%, 39% 68%, 41% 75%, 47% 80%, 53% 80%, 59% 75%, 61% 68%);
+      clip-path: polygon(55% 58%, 54% 50%, 53% 42%, 51% 37%, 49% 37%, 47% 42%, 46% 50%, 45% 58%, 39% 68%, 41% 75%, 47% 80%, 53% 80%, 59% 75%, 61% 68%);
     }
 
 #cookiecuttercatprofile {
@@ -199,7 +229,7 @@ button {
     }
 
     #ccBODYears {
-      z-index:18;
+      z-index:9;
       width:500px;
       height:500px;
       -webkit-clip-path: polygon(14% 9%, 18% 16%, 15% 17%, 12% 15%);
@@ -218,8 +248,8 @@ button {
       z-index: 11;
       width:500px;
       height:500px;
-      -webkit-clip-path: polygon(6% 22%, 9% 19%, 9% 18%, 8% 18%, 7% 20%, 2% 24%, 3% 25%);
-      clip-path: polygon(6% 22%, 9% 19%, 9% 18%, 8% 18%, 7% 20%, 2% 24%, 3% 25%);
+      -webkit-clip-path: polygon(8.75% 18.5%, 8.25% 18%, 7% 20%, 2% 24%, 3% 25%, 2% 25%, 2% 28%, 3% 27%, 3.5% 26%, 4.5% 24%, 6% 22%, 8% 20%);
+      clip-path: polygon(8.75% 18.5%, 8.25% 18%, 7% 20%, 2% 24%, 3% 25%, 2% 25%, 2% 28%, 3% 27%, 3.5% 26%, 4.5% 24%, 6% 22%, 8% 20%);
     }
 
 .catpart {
@@ -231,7 +261,7 @@ button {
 #checkboxesForm {
 width: calc(100% - 500px);
 text-align: left;
-padding:20px;
+padding:40px;
 }
 
 .colorwindowFrame {

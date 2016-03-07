@@ -16,11 +16,14 @@
 
 		<div style='display:inline-block; height:300px; width:300px; background-color:grey'>
 			<div style='position:absolute; background-color:white;' id='cookiecuttercatface' class:'catpart'> </div>
+				<div id= 'catnose' class='catpart'></div>
+				<div id= 'catnoseoutline' class='catpart'></div>
+				<div id= 'cateyeLpupil' class='catpart'></div>
+				<div id= 'cateyeLiris' class='catpart'></div>
+				<div id= 'cateyeRpupil' class='catpart'></div>
+				<div id= 'cateyeRiris' class='catpart'></div>
 				<div style= 'background-color:blue' id= 'ccLEFTear' class='catpart'></div>
-				<div style= 'background-color:red' id= 'catnose' class='catpart'></div>
 				<div style= 'background-color:blue' id= 'ccRIGHTear' class='catpart'></div>
-				<div style= 'background-color:black' id= 'cateyeL' class='catpart'></div>
-				<div style= 'background-color:black' id= 'cateyeR' class='catpart'></div>
 				<div style= 'background-color:orange' id= 'ccmuzzle' class='catpart'></div>
 				<div style= 'background-color:yellow' id= 'ccFACEchin' class='catpart'></div>
 				<div style= 'background-color:orange' id= 'ccFACEface' class='catpart'></div>

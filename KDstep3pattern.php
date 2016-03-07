@@ -114,7 +114,7 @@
 			else {
 				$ccmuzzle_hide = "hidden";
 			}
-//Face Checkbox action - needs to be linked with muzzle. So the options are a) just muzzle or b) muzzle and face but NOT c) just face
+//Face Checkbox action * doesn't fully work. Cat face, yes. Cat profile, no. Why?
 			if (isset ($_POST["ccface_hide"])) {
 				$ccface_hide = "";
 			}
@@ -148,9 +148,12 @@
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccmuzzle' class='".$ccmuzzle_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccFACEface' class='".$ccface_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccFACEchin' class='".$ccstomachchin_hide." catpart'></div>
-					<div style= 'background-color:#ffaa80' id= 'catnose' class='catpart'></div>
-					<div style= 'background-color:black' id= 'cateyeL' class='catpart'></div>
-					<div style= 'background-color:black' id= 'cateyeR' class='catpart'></div>
+					<div id= 'catnose' class='catpart'></div>
+					<div id= 'catnoseoutline' class='catpart'></div>
+					<div id= 'cateyeLpupil' class='catpart'></div>
+					<div id= 'cateyeLiris' class='catpart'></div>
+					<div id= 'cateyeRpupil' class='catpart'></div>
+					<div id= 'cateyeRiris' class='catpart'></div>
 				</div>
 
 				<br><br><br><br><br>
