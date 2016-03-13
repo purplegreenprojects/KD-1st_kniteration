@@ -32,7 +32,7 @@
 
 		foreach ($arrayyarncolors as $color) {
 			if(isset($_POST[$color[0]])) {
-				header ("location: KDstep3pattern.php?texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$color[0]);
+				header ("location: KDstep3pattern.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$color[0]);
 			}
 		}
 	}
@@ -47,10 +47,10 @@
 		<link rel='stylesheet' href="stylesheet.css">
 	</head>
 	<body>
-		<div style='font-size:36px'>
+		<div style='font-size:28px'>
 			<b> Step 2: Color </b>
 		</div>
-		<div> Choose <i> Contrasting Color </i> </div>
+		<div style='font-size:36px'> Choose <u> Contrasting </u> Color </div>
 		<hr>
 
 		<form method='post'>

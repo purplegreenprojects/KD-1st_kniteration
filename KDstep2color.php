@@ -21,7 +21,7 @@
 	if(isset ($arrayyarncolors)){
 		foreach ($arrayyarncolors as $color) {
 			if(isset($_POST[$color[0]])) {
-				header ("location: KDstep2cc.php?texture=".$_GET["texture"]."&maincolor=".$color[0]);
+				header ("location: KDstep2cc.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$color[0]);
 			}
 		}
 	}
@@ -36,10 +36,10 @@
 		<link rel='stylesheet' href="stylesheet.css">
 	</head>
 	<body>
-		<div style='font-size:36px'>
+		<div style='font-size:28px'>
 			<b> Step 2: Color </b>
 		</div>
-		<div> Choose Main Color </div>
+		<div style='font-size:36px'> Choose <u> Main </u> Color </div>
 		<hr>
 
 		<form method='post'>

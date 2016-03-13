@@ -51,6 +51,7 @@
 		<hr>
 
 		<form method='post'>
+		<br>
 		
 		<?php
 
@@ -126,22 +127,20 @@
 // </testing area>
 
 
-			echo "<div class='colorwindowsdiv'>
-					<div class='colorwindowFrame'>
-						<div class='colorwindow' style='background-image: url(".$maincolorurl.")'> 
-						</div>
-						<div class='colorwindowLabel'> Main Color </div>
-					</div> 
-						
+			echo "<div class='colorwindowFrame'>
+					<div class='colorwindow' style='background-image: url(".$maincolorurl.")'> 
+					</div>
+					<div class='colorwindowLabel'> Main Color </div>
+				</div>
+					
 
-					<div class='colorwindowFrame'>
-						<div class='colorwindow' style='background-image: url(".$ccurl.")'>
-						</div>
-					<div class='colorwindowLabel'> Contrasting Color </div>
-					</div> 
+				<div class='colorwindowFrame'>
+					<div class='colorwindow' style='background-image: url(".$ccurl.")'>
+					</div>
+				<div class='colorwindowLabel'> Contrasting Color </div>
 				</div>
 				
-				<div class='catfacediv' style='background-color:gray'>
+				<div class='catfacediv'>
 					<div style='position:absolute; background-image: url(".$maincolorurl.")' id='cookiecuttercatface' class:'catpart'> </div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccLEFTear' class='".$ccears_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccRIGHTear' class='".$ccears_hide." catpart'></div>
@@ -156,8 +155,7 @@
 					<div id= 'cateyeRiris' class='catpart'></div>
 				</div>
 
-				<br>
-				<div class='step3spacing'> </div>
+				<br><br><br><br><br>
 
 				<div class='catprofilediv'>
 					<div style='position: absolute; background-image: url(".$maincolorurl.");' id='cookiecuttercatprofile' class='catpart'> </div>
@@ -175,53 +173,41 @@
 				</div>";
 		?>
 
-	<div id='checkboxesForm' style='line-height: 150%'>
 
-		<div style='font-size: 28'> <b><u> Choose Contrasting Color Areas </u></b> </div>
-<br>
-		<div style='display:inline-block; width:30%'>
-			<input type='checkbox' name='ccface_hide'> Nose
-			<br>
-			<input type='checkbox' name='ccmuzzle_hide'> Muzzle		
-		</div>
-		<div style='display:inline-block; width:30%; position: relative'>
-			<div style='position:relative;top: 50%; transform: translateY(-50%)'>
-			<input type='checkbox' name='ccears_hide'> Ears
-			</div>
-		</div>
-		<div style='display:inline-block; width:30%'>
-		<div style='position:relative;top: 50%; transform: translateY(-50%)'>
-			<input type='checkbox' name='cctail_hide'> Tail
-		</div>
-		</div>
-			<br><br>
-		<input type='checkbox' name='ccstomachchin_hide'> Stomach, Chest, and Chin
-			<br><br>
-		<div style='display:inline-block; width:50%'>
-			<input type='checkbox' name='cclfp_hide'> Left Front Paw
-			<br>
-			<input type='checkbox' name='ccrfp_hide'> Right Front Paw
-			<br>
-		</div>
-		<div style='display:inline-block'>
-			<input type='checkbox' name='cclbp_hide'> Left Back Paw
-			<br>
-			<input type='checkbox' name='ccrbp_hide'> Right Back Paw
-		</div>
-		<br><br>
-		<div style='text-align:center'>
-			<input type='submit' name='previewbutton' value='Preview!'>
-		</div>
 
-	</div>
+<div id='checkboxesForm' style='line-height: 200%'>
 
+<div style='font-size: 28'> <b> Choose Contrasting Color Areas </b> </div> <br>
+
+<u> Head </u> <br>
+	<input type='checkbox' name='ccmuzzle_hide'> Muzzle
+	<br>
+	<input type='checkbox' name='ccface_hide'> Nose
+	<br>
+	<input type='checkbox' name='ccears_hide'> Ears
+	<br>
+<u> Paws </u> <br>
+	<input type='checkbox' name='cclbp_hide'> Left Back Paw
+	<br>
+	<input type='checkbox' name='ccrbp_hide'> Right Back Paw
+	<br>
+	<input type='checkbox' name='cclfp_hide'> Left Front Paw
+	<br>
+	<input type='checkbox' name='ccrfp_hide'> Right Front Paw
+	<br>
+<u> Body </u> <br>
+	<input type='checkbox' name='ccstomachchin_hide'> Stomach, Chest, and Chin
+	<br>
+	<input type='checkbox' name='cctail_hide'> Tail
+	<br>
+
+	<input type='submit' name='previewbutton' value='Preview!'>
+
+</div>
 </form>
 
 <form method='post' action='KDstep4previewTEST.php'>
-	<div class='step3continue'>
-	<br>
-		<input type='submit' name'continuetostep4' value= 'Continue'>
-	<div>
+	<input type='submit' name'continuetostep4' value= 'Continue'>
 </form>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 <html>
 <head>
 	<title> Kniterative Designs </title>
@@ -7,7 +8,7 @@
 	<link rel='stylesheet' href="stylesheet.css">
 </head>
 <body>
-	<div style='font-size:42px'> <b> Step 1: Texture </b> </div>
+	<div style='font-size:36px'> <b> Step 1: Texture </b> </div>
 	<div style= 'font-size:28px'> Choose Your Yarn </div> 
 <hr>
 
@@ -15,10 +16,9 @@
 
 <?php
 	include("arrays.php");
-
 	foreach ($arrayyarntextures as $yarntexture) {
-		echo "<div class='chooseKD'style= 'width: 30%; height: 50%'>
-				<div class='itemlabel' style= 'font-size: 32px'> 
+		echo "<div class='chooseyarntexture'>
+				<div class='itemlabel' style= 'font-size: 30px'> 
 				<b> ".$yarntexture[0]." </b> 
 			</div>
 			<div class= 'buttonframe'> 
@@ -29,7 +29,7 @@
 		</div>";
 			
 		if (isset($_POST[$yarntexture[2]])) {
-			header ("location: KDstep2color.php?texture=".$yarntexture[2]);
+			header ("location: KDstep2color.php?item=".$_GET["item"]."&texture=".$yarntexture[2]);
 		}
 	}	
 ?>

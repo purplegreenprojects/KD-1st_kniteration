@@ -126,7 +126,7 @@
 // </testing area>
 
 
-			echo "<div class='colorwindowsdiv'>
+			echo "<div class='colorwindowsdiv' style='background-color:green'>
 					<div class='colorwindowFrame'>
 						<div class='colorwindow' style='background-image: url(".$maincolorurl.")'> 
 						</div>
@@ -141,7 +141,7 @@
 					</div> 
 				</div>
 				
-				<div class='catfacediv' style='background-color:gray'>
+				<div class='catfacediv'>
 					<div style='position:absolute; background-image: url(".$maincolorurl.")' id='cookiecuttercatface' class:'catpart'> </div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccLEFTear' class='".$ccears_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccRIGHTear' class='".$ccears_hide." catpart'></div>
@@ -157,7 +157,7 @@
 				</div>
 
 				<br>
-				<div class='step3spacing'> </div>
+				<div class='step3spacing' style='background-color:yellow'> </div>
 
 				<div class='catprofilediv'>
 					<div style='position: absolute; background-image: url(".$maincolorurl.");' id='cookiecuttercatprofile' class='catpart'> </div>
@@ -175,7 +175,9 @@
 				</div>";
 		?>
 
-	<div id='checkboxesForm' style='line-height: 150%'>
+
+
+	<div id='checkboxesForm' style='line-height: 150%; background-color:pink'>
 
 		<div style='font-size: 28'> <b><u> Choose Contrasting Color Areas </u></b> </div>
 <br>
@@ -218,7 +220,7 @@
 </form>
 
 <form method='post' action='KDstep4previewTEST.php'>
-	<div class='step3continue'>
+	<div class='step3continue' style='background-color:blue'>
 	<br>
 		<input type='submit' name'continuetostep4' value= 'Continue'>
 	<div>

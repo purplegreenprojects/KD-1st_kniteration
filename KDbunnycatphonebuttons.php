@@ -28,7 +28,7 @@
 			</div>
 		</div>";
 		if (isset($_POST[$itemlisting])) {
-			header ("location: KDstep1texture.php");
+			header ("location: KDstep1texture.php?item=".$itemlisting);
 		}	
 	}
 
