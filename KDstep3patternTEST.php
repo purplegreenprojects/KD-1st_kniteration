@@ -24,7 +24,7 @@
 				<div id= 'cateyeRiris' class='catpart'></div>
 				<div style= 'background-color:blue' id= 'ccLEFTear' class='catpart'></div>
 				<div style= 'background-color:blue' id= 'ccRIGHTear' class='catpart'></div>
-				<div style= 'background-color:orange' id= 'ccmuzzle' class='catpart'></div>
+				<div style= 'background-color:green' id= 'ccmuzzle' class='catpart'></div>
 				<div style= 'background-color:yellow' id= 'ccFACEchin' class='catpart'></div>
 				<div style= 'background-color:orange' id= 'ccFACEface' class='catpart'></div>
 				

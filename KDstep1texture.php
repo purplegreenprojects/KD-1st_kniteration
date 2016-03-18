@@ -5,11 +5,14 @@
 	<link rel='shortcut icon' href='kniterative designs logo 1000.png'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico:regular,bold;italic;bolditalic">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold;italic;bolditalic">
 	<link rel='stylesheet' href="stylesheet.css">
 </head>
 <body>
-	<div style='font-size:36px'> <b> Step 1: Texture </b> </div>
-	<div style= 'font-size:28px'> Choose Your Yarn </div> 
+	<div style='line-height: 200%'>
+		<div style='font-size:36px'> <b> Step 1: Texture </b> </div>
+		<div class='subheadings'> Choose Your Yarn </div> 
+	</div>
 <hr>
 
 <form method='post'>
@@ -25,7 +28,7 @@
 				<button class='buttonbackground'type='submit' name='".$yarntexture[2]."' value='' style='background-image: url(KDimages/".$yarntexture[1].")'>
 				</button>
 			</div>
-			<div style='text-align:center; font-size: 20px'> ".$yarntexture[3]." </div>
+			<div class='subheadings' style='text-align:center; font-size: 18px'> ".$yarntexture[3]." </div>
 		</div>";
 			
 		if (isset($_POST[$yarntexture[2]])) {

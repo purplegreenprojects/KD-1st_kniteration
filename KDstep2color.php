@@ -2,20 +2,8 @@
 	include("arrays.php");
 	$errormessage = "";
 
-	if($_GET["texture"]=="pipsqueak") {
-		$arrayyarncolors = $arraypipsqueakcolors;
-	}
-	elseif($_GET["texture"]=="homespun") {
-		$arrayyarncolors = $arrayhomespuncolors;
-	}
-	elseif($_GET["texture"]=="caron") {
-		$arrayyarncolors = $arraycaroncolors;
-	}
-	elseif($_GET["texture"]=="parfait") {
-		$arrayyarncolors = $arrayparfaitcolors;
-	}
-	elseif($_GET["texture"]=="comfy") {
-		$arrayyarncolors = $arraycomfycolors;
+	if(isset($_GET["texture"])) {
+ 		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
 
 	if(isset ($arrayyarncolors)){
@@ -32,14 +20,17 @@
 		<title> Kniterative Designs </title>
 		<link rel='shortcut icon' href='kniterative designs logo 1000.png'>
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold;italic;bolditalic">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico:regular,bold;italic;bolditalic">
 		<link rel='stylesheet' href="stylesheet.css">
 	</head>
 	<body>
-		<div style='font-size:28px'>
-			<b> Step 2: Color </b>
+		<div style='line-height: 200%'>
+			<div style='font-size:36px'>
+				<b> Step 2: Color </b>
+			</div>
+			<div class='subheadings'> Choose <u> Main</u> Color </div>
 		</div>
-		<div style='font-size:36px'> Choose <u> Main </u> Color </div>
 		<hr>
 
 		<form method='post'>

@@ -2,22 +2,12 @@
 	include("arrays.php");
 	$errormessage = "";
 
+	if(isset($_GET["cc"]) and ($_GET["cc"] == "nocc")) {
+		header("location: KDstep4preview.php");
+	}
+
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
-		if($_GET["texture"]=="pipsqueak") {
-			$arrayyarncolors = $arraypipsqueakcolors;
-		}
-		elseif($_GET["texture"]=="homespun") {
-			$arrayyarncolors = $arrayhomespuncolors;
-		}
-		elseif($_GET["texture"]=="caron") {
-			$arrayyarncolors = $arraycaroncolors;
-		}
-		elseif($_GET["texture"]=="parfait") {
-			$arrayyarncolors = $arrayparfaitcolors;
-		}
-		elseif($_GET["texture"]=="comfy") {
-		$arrayyarncolors = $arraycomfycolors;
-		}
+ 		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
 	
 	if(isset ($arrayyarncolors)){
@@ -27,6 +17,10 @@
 			}
 			if($color[0] == $_GET["cc"]) {
 				$ccurl = $color[1];
+			}
+
+			if ($_GET["cc"] == "noc") {
+				header("location: KDstep4preview.php");
 			}
 		}
 		foreach ($arrayyarncolors as $color) {
@@ -43,11 +37,12 @@
 		<link rel='shortcut icon' href='kniterative designs logo 1000.png'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico:regular,bold;italic;bolditalic">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:regular,bold;italic;bolditalic">
 		<link rel='stylesheet' href="stylesheet.css">
 	</head>
 
 	<body>
-		<div style='font-size:38px'> <b> Step 3: Coat Pattern </b> </div>
+		<div style='font-size:36px'> <b> Step 3: Coat Pattern </b> </div>
 		<hr>
 
 		<form method='post'>
@@ -59,65 +54,83 @@
 //Left Back Paw Checkbox action
 			if (isset ($_POST["cclbp_hide"])) {
 				$cclbp_hide = "";
+				$cclbp_checked = "checked";
 			}
 			else {
 				$cclbp_hide = "hidden";
+				$cclbp_checked = "";
 			}
 //Right Back Paw Checkbox action
 			if (isset ($_POST["ccrbp_hide"])) {
 				$ccrbp_hide = "";
+				$ccrbp_checked = "checked";
 			}
 			else {
 				$ccrbp_hide = "hidden";
+				$ccrbp_checked = "";
 			}
 //Left Front Paw Checkbox action
 			if (isset ($_POST["cclfp_hide"])) {
 				$cclfp_hide = "";
+				$cclfp_checked = "checked";
 			}
 			else {
 				$cclfp_hide = "hidden";
+				$cclfp_checked = "";
 			}
 //Right Front Paw Checkbox action
 			if (isset ($_POST["ccrfp_hide"])) {
 				$ccrfp_hide = "";
+				$ccrfp_checked = "checked";
 			}
 			else {
 				$ccrfp_hide = "hidden";
+				$ccrfp_checked = "";
 			}
-//StomachChin Checkbox action * Works on both :)
+//StomachChin Checkbox action 
 			if (isset ($_POST["ccstomachchin_hide"])) {
 				$ccstomachchin_hide = "";
+				$ccstomachchin_checked = "checked";
 			}
 			else {
 				$ccstomachchin_hide = "hidden";
+				$ccstomachchin_checked = "";
 			}
 //Tail Checkbox action
 			if (isset ($_POST["cctail_hide"])) {
 				$cctail_hide = "";
+				$cctail_checked = "checked";
 			}
 			else {
 				$cctail_hide = "hidden";
+				$cctail_checked = "";
 			}
-//Ear Checkbox action * doesn't fully work. Cat face, yes. Cat profile, no. Why?
+//Ear Checkbox action 
 			if (isset ($_POST["ccears_hide"])) {
 				$ccears_hide = "";
+				$ccears_checked = "checked";
 			}
 			else {
 				$ccears_hide = "hidden";
+				$ccears_checked = "";
 			}
-//Muzzle Checkbox action * doesn't fully work. Cat face, yes. Cat profile, no. Why?
+//Muzzle Checkbox action 
 			if (isset ($_POST["ccmuzzle_hide"])) {
 				$ccmuzzle_hide = "";
+				$ccmuzzle_checked = "checked";
 			}
 			else {
 				$ccmuzzle_hide = "hidden";
+				$ccmuzzle_checked = "";
 			}
-//Face Checkbox action * doesn't fully work. Cat face, yes. Cat profile, no. Why?
+//Face Checkbox action 
 			if (isset ($_POST["ccface_hide"])) {
 				$ccface_hide = "";
+				$ccface_checked = "checked";
 			}
 			else {
 				$ccface_hide = "hidden";
+				$ccface_checked = "";
 			}
 
 
@@ -169,55 +182,55 @@
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccchest' class='".$ccstomachchin_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccchin' class='".$ccstomachchin_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'cctail' class='".$cctail_hide." catpart'></div>
-					<div style= 'blackground-image: url(".$ccurl.");' id= 'ccBODYears' class='".$ccears_hide." catpart'></div>
-					<div style= 'blackground-image: url(".$ccurl.");' id= 'ccBODYmuzzle' class='".$ccmuzzle_hide." catpart'></div>
-					<div style= 'blackground-image: url(".$ccurl.");' id= 'ccBODYface' class='".$ccface_hide." catpart'></div>
+					<div style= 'background-image: url(".$ccurl.");' id= 'ccBODYears' class='".$ccears_hide." catpart'></div>
+					<div style= 'background-image: url(".$ccurl.");' id= 'ccBODYmuzzle' class='".$ccmuzzle_hide." catpart'></div>
+					<div style= 'background-image: url(".$ccurl.");' id= 'ccBODYface' class='".$ccface_hide." catpart'></div>
 				</div>";
-		?>
+echo "
 
-	<div id='checkboxesForm' style='line-height: 150%'>
+	<div id='checkboxesForm'>
 
-		<div style='font-size: 28'> <b><u> Choose Contrasting Color Areas </u></b> </div>
+		<div style='font-size: 28; font-family: Pacifico'> <b> Choose Contrasting Color Areas </b> </div>
 <br>
 		<div style='display:inline-block; width:30%'>
-			<input type='checkbox' name='ccface_hide'> Nose
+			<input type='checkbox' name='ccface_hide' ".$ccface_checked."> Nose
 			<br>
-			<input type='checkbox' name='ccmuzzle_hide'> Muzzle		
+			<input type='checkbox' name='ccmuzzle_hide' ".$ccmuzzle_checked."> Muzzle		
 		</div>
 		<div style='display:inline-block; width:30%; position: relative'>
 			<div style='position:relative;top: 50%; transform: translateY(-50%)'>
-			<input type='checkbox' name='ccears_hide'> Ears
+			<input type='checkbox' name='ccears_hide' ".$ccears_checked."> Ears
 			</div>
 		</div>
 		<div style='display:inline-block; width:30%'>
 		<div style='position:relative;top: 50%; transform: translateY(-50%)'>
-			<input type='checkbox' name='cctail_hide'> Tail
+			<input type='checkbox' name='cctail_hide' ".$cctail_checked."> Tail
 		</div>
 		</div>
 			<br><br>
-		<input type='checkbox' name='ccstomachchin_hide'> Stomach, Chest, and Chin
+		<input type='checkbox' name='ccstomachchin_hide' ".$ccstomachchin_checked."> Stomach, Chest, and Chin
 			<br><br>
 		<div style='display:inline-block; width:50%'>
-			<input type='checkbox' name='cclfp_hide'> Left Front Paw
+			<input type='checkbox' name='cclfp_hide' ".$cclfp_checked."> Left Front Paw
 			<br>
-			<input type='checkbox' name='ccrfp_hide'> Right Front Paw
+			<input type='checkbox' name='ccrfp_hide' ".$ccrfp_checked."> Right Front Paw
 			<br>
 		</div>
 		<div style='display:inline-block'>
-			<input type='checkbox' name='cclbp_hide'> Left Back Paw
+			<input type='checkbox' name='cclbp_hide' ".$cclbp_checked."> Left Back Paw
 			<br>
-			<input type='checkbox' name='ccrbp_hide'> Right Back Paw
+			<input type='checkbox' name='ccrbp_hide' ".$ccrbp_checked."> Right Back Paw
 		</div>
 		<br><br>
 		<div style='text-align:center'>
 			<input type='submit' name='previewbutton' value='Preview!'>
 		</div>
 
-	</div>
-
+	</div>"
+?>
 </form>
 
-<form method='post' action='KDstep4previewTEST.php'>
+<form method='post' action='KDstepPREVIEW.php'>
 	<div class='step3continue'>
 	<br>
 		<input type='submit' name'continuetostep4' value= 'Continue'>
