@@ -3,7 +3,7 @@
 	$errormessage = "";
 
 	if(isset($_GET["cc"]) and ($_GET["cc"] == "nocc")) {
-		header("location: KDstep4preview.php");
+		header("location: KDstepPREVIEW.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]);
 	}
 
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
@@ -20,9 +20,11 @@
 			}
 
 			if ($_GET["cc"] == "noc") {
-				header("location: KDstep4preview.php");
+				header("location: KDstepPREVIEW.php");
 			}
 		}
+
+	// this next part should be something about the checkboxes being set and hitting the preview button, right? not the colors - that was from the mc and cc pages
 		foreach ($arrayyarncolors as $color) {
 			if(isset($_POST[$color[0]])) {
 				header ("location: KDstep3pattern.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$color[0]);
@@ -228,13 +230,6 @@ echo "
 
 	</div>"
 ?>
-</form>
-
-<form method='post' action='KDstepPREVIEW.php'>
-	<div class='step3continue'>
-	<br>
-		<input type='submit' name'continuetostep4' value= 'Continue'>
-	<div>
 </form>
 </body>
 </html>
