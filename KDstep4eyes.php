@@ -91,7 +91,43 @@ $hidden = "hidden";
 				$ccface_hide = "hidden";
 				$ccface_checked = "";
 			}
-
+//Left Eye Colors (Radio)
+			if (isset($_GET["lefteye"])) {
+				$lefteye_blue = "";
+				$lefteye_blue_picked = "picked";
+			}
+			elseif (isset($_GET["lefteye"])) {
+				$lefteye_green = "";
+				$lefteye_green_picked = "picked";
+			}
+			elseif (isset($_GET["lefteye"])) {
+				$lefteye_yellow = "";
+				$lefteye_yellow_picked = "picked";
+			}
+			else {
+				$lefteye_blue_picked = "";
+				$lefteye_green_picked = "";
+				$lefteye_yellow_picked = "";
+			}
+//Right Eye Colors (Radio)
+			if (isset($_GET["righteye"])) {
+				$righteye_blue = "";
+				$righteye_blue_picked = "picked";
+			}
+			elseif (isset($_GET["righteye"])) {
+				$righteye_green = "";
+				$righteye_green_picked = "picked";
+			}
+			elseif (isset($_GET["righteye"])) {
+				$righteye_yellow = "";
+				$righteye_yellow_picked = "picked";
+			}
+			else {
+				$righteye_blue_picked = "";
+				$righteye_green_picked = "";
+				$righteye_yellow_picked = "";
+			}			
+			
 
 // put cc area (ex:ccears_hide) in url in order to display cc area on face
 
@@ -111,13 +147,28 @@ $hidden = "hidden";
 			<div style='height:500px; width: 500px' id= 'cateyeRiris' class='catpart'></div>
 		</div>";
 
-echo "
+echo "<div class='eyescheckboxesForm'>
+		<div style='height: 50%; width: 50%; display:inline-block;'> <b> Left Eye </b> <br> 
 
-	<div class='eyescheckboxesForm'>
+			<input type='radio' name='lefteye_blue' ".$lefteye_blue_picked."> Blue
+			<br>
+			<input type='radio' name='lefteye_green' ".$lefteye_green_picked."> Green
+			<br>
+			<input type='radio' name='lefteye_yellow' ".$lefteye_yellow_picked."> Yellow
+		</div><!--
+		--><div style='height:50%; width: 50%; display:inline-block'> <b> Right Eye </b> <br> 
 
-		<div style='font-size: 28; font-family: Pacifico'> <b> Left Eye </b> </div>
-		
+			<input type='radio' name='righteye_blue' ".$righteye_blue_picked."> Blue
+			<br>
+			<input type='radio' name='righteye_green' ".$righteye_green_picked."> Green
+			<br>
+			<input type='radio' name='righteye_yellow' ".$righteye_yellow_picked."> Yellow
+		</div>
+		<div style='display:block; background-color:green'>
+			<input type='button' name='eyecolorsubmit' value='Submit'>
+		</div>
 	</div>"
+
 ?>
 </form>
 </body>

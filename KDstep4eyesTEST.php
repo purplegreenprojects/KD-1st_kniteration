@@ -115,7 +115,7 @@ $hidden = "hidden";
 
 
 
-<div style='background-color:pink; padding:0px; border:0px; margin:0px'>
+<div class='eyescheckboxesForm' style='background-color:pink; padding:0px; border:0px; margin:0px'>
 
 	<div style='height: 100%; width: 40%; display:inline-block; background-color:blue; padding:0px; border:0px;margin:0px'> <b> Left Eye </b> </div>
 	<div style='height:100%; width: 40%; display:inline-block; background-color:red; padding:0px; border:0px;margin:0px'> <b> Right Eye </b> </div>

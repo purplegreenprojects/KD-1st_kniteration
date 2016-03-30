@@ -9,6 +9,10 @@
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
+
+	else {
+		header("location: KDstep2cc.php");
+	}
 	
 	if(isset ($arrayyarncolors)){
 		foreach ($arrayyarncolors as $color) {
@@ -225,7 +229,7 @@ echo "
 		</div>
 		<br><br>
 		<div style='text-align:center'>
-			<input type='submit' name='previewbutton' value='Preview!'>
+			<button class='btn btn-success' type='submit' name='previewbutton'> Preview! </button>
 		</div>
 
 	</div>"
