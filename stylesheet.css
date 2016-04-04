@@ -1,7 +1,7 @@
 
 body {
   background-color: #F8F8F8; 
-  color:black; 
+  color: black; 
   font-family:Pacifico,serif; 
   font-size: 24px; 
   text-align:center;
@@ -152,7 +152,7 @@ button {
       height:300px;
       -webkit-clip-path: circle(5.0% at 40% 54%);
       clip-path: circle(5.0% at 40% 54%);
-      background-color: green;
+      background-color: white;
     }
 
     #cateyeRpupil {
@@ -170,7 +170,7 @@ button {
       height:300px;
       -webkit-clip-path: circle(5.0% at 60% 54%);
       clip-path: circle(4.0% at 60% 54%);
-      background-color: green;
+      background-color: white;
     }
 
     #ccLEFTear {
@@ -319,7 +319,7 @@ button {
 	height:275px; 
 	width:300px; 
 	background-color:gray;
-	background: -webkit-radial-gradient(white, #999999);
+	background: -webkit-radial-gradient(white, #3385ff);
 	display:block;
 }
 
@@ -458,7 +458,7 @@ input[type=checkbox] {
 
 #bunnyprofile_wholetail {
 	z-index:4;
-	-webkit-clip-path:polygon(83% 54.5%, 82.75% 66.9%, 87.5% 61%, 88% 58%, 88% 55.5%, 86% 54%, 85% 54%);
+	-webkit-clip-path: polygon(83% 54.5%, 82.75% 66.9%, 87.5% 61%, 88% 58%, 88% 55.5%, 86% 54%, 85% 54%);
 	clip-path: polygon(83% 54.5%, 82.75% 66.9%, 87.5% 61%, 88% 58%, 88% 55.5%, 86% 54%, 85% 54%);
 }
 

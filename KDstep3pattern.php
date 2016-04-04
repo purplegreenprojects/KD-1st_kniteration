@@ -27,14 +27,39 @@
 				header("location: KDstepPREVIEW.php");
 			}
 		}
+	}
 
-	// this next part should be something about the checkboxes being set and hitting the preview button, right? not the colors - that was from the mc and cc pages
-		foreach ($arrayyarncolors as $color) {
-			if(isset($_POST[$color[0]])) {
-				header ("location: KDstep3pattern.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$color[0]);
+//checkbox stuff - put in url
+
+
+	//first I need to make an array with the things that could potentially be checked
+
+		$arrayChecked = array("$cclbp", "$ccrbp", "$cclfp", "$ccrfp", "$ccstomachchin", "$cctail", "$ccears", "$ccmuzzle", "$ccface");
+		
+
+	//...then go through each one and if it is checked, put it in the url so that when we get to step4eyes, it's there
+
+	if(isset($_POST['previewbutton'])) {
+		foreach ($arrayChecked as $chosen) {
+			if(isset($_POST[$chosen."_hide"]) {
+				header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$_GET["cc"]);
 			}
 		}
+	}			
+/*
+			//put it in url
+			$chosen = ($_POST['ccears_hide'])
+		}
 	}
+*/
+
+/*
+//move to step4eyes.php - WORKS NOW
+	if(isset($_POST['previewbutton'])) {
+		header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$_GET["cc"]);
+	}
+*/
+
 ?>
 
 <html>
