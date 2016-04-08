@@ -2,15 +2,11 @@
 	include("arrays.php");
 	$errormessage = "";
 
-	if(isset($_GET["cc"]) and ($_GET["cc"] == "nocc")) {
-		header("location: KDstepPREVIEW.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]);
-	}
-
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
-	
-	if(isset ($arrayyarncolors)){
+
+	if(isset($arrayyarncolors)){
 		foreach ($arrayyarncolors as $color) {
 			if($color[0] == $_GET["maincolor"]) {
 				$maincolorurl = $color[1];
@@ -18,19 +14,13 @@
 			if($color[0] == $_GET["cc"]) {
 				$ccurl = $color[1];
 			}
-
-			if ($_GET["cc"] == "noc") {
-				header("location: KDstepPREVIEW.php");
-			}
-		}
-
-	// this next part should be something about the checkboxes being set and hitting the preview button, right? not the colors - that was from the mc and cc pages
-		foreach ($arrayyarncolors as $color) {
-			if(isset($_POST[$color[0]])) {
-				header ("location: KDstep3pattern.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$color[0]);
-			}
 		}
 	}
+
+	if(isset($_POST['eyecolorsubmit'])) {
+		header ("location: KDfinalform.php");
+	}
+
 ?>
 
 <html>
@@ -164,6 +154,7 @@ echo "<div class='eyescheckboxesForm'>
 			<br>
 			<input type='radio' name='righteye_yellow' ".$righteye_yellow_picked."> Yellow
 		</div>
+
 		<div style='display:block; background-color:green'>
 			<input type='button' name='eyecolorsubmit' value='Submit'>
 		</div>

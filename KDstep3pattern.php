@@ -23,7 +23,7 @@
 				$ccurl = $color[1];
 			}
 
-			if ($_GET["cc"] == "noc") {
+			if ($_GET["cc"] == "nocc") {
 				header("location: KDstepPREVIEW.php");
 			}
 		}
@@ -34,31 +34,44 @@
 
 	//first I need to make an array with the things that could potentially be checked
 
-		$arrayChecked = array("$cclbp", "$ccrbp", "$cclfp", "$ccrfp", "$ccstomachchin", "$cctail", "$ccears", "$ccmuzzle", "$ccface");
+		$arrayChecked = array("cclbp", "ccrbp", "cclfp", "ccrfp", "ccstomachchin", "cctail", "ccears", "ccmuzzle", "ccface");
 		
+		$newstuff = "";
 
-	//...then go through each one and if it is checked, put it in the url so that when we get to step4eyes, it's there
-
-	if(isset($_POST['previewbutton'])) {
-		foreach ($arrayChecked as $chosen) {
-			if(isset($_POST[$chosen."_hide"]) {
-				header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$_GET["cc"]);
-			}
+	//...then go through each one and, if it is checked, put it in the url so that when we get to step4eyes, it's there
+if(isset($_POST['previewbutton'])) {
+	foreach($arrayChecked as $chosen) {
+		if (isset($_POST[$chosen."_hide"])) {
+			$newstuff = $newstuff ."&".$chosen."_hide";
 		}
-	}			
-/*
-			//put it in url
-			$chosen = ($_POST['ccears_hide'])
-		}
-	}
-*/
+	}	
 
-/*
-//move to step4eyes.php - WORKS NOW
-	if(isset($_POST['previewbutton'])) {
-		header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$_GET["cc"]);
-	}
-*/
+	header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]."&cc=".$_GET["cc"].$newstuff);
+}
+
+
+
+									/*
+										if(isset($_POST['previewbutton'])) {
+											foreach ($arrayChecked as $chosen) {
+												if(isset($_POST[$chosen."_hide"])) {
+													header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]."&cc=".$_GET["cc"]."&".$_GET["($chosen_hide)"]);
+												}
+											}
+										}			
+									/*
+												//put it in url
+												$chosen = ($_POST['ccears_hide'])
+											}
+										}
+									
+
+
+				//move to step4eyes.php - WORKS NOW
+					if(isset($_POST['previewbutton'])) {
+						header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]. "&cc=".$_GET["cc"]);
+					}
+				*/
 
 ?>
 
@@ -185,7 +198,7 @@
 					</div> 
 				</div>
 				
-				<div class='catfacediv' style='background-color:gray'>
+				<div class='catfacediv'>
 					<div style='position:absolute; background-image: url(".$maincolorurl.")' id='cookiecuttercatface' class:'catpart'> </div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccLEFTear' class='".$ccears_hide." catpart'></div>
 					<div style= 'background-image: url(".$ccurl.");' id= 'ccRIGHTear' class='".$ccears_hide." catpart'></div>
