@@ -6,18 +6,20 @@
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}	
 
-	if(isset ($arrayyarncolors)){
+	if(isset($arrayyarncolors)){
 		foreach ($arrayyarncolors as $color) {
 			if($color[0] == $_GET["maincolor"]) {
 				$maincolorurl = $color[1];
 			}
-		}
-		foreach ($arrayyarncolors as $color) {
-			if(isset($_POST[$color[0]])) {
-				header ("location: KDstepPREVIEW.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]);
+			if($color[0] == $_GET["cc"]) {
+				$ccurl = $color[1];
+			}
+			if(isset($_POST["previewsubmit"])) {
+				header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]."&cc=nocc");
 			}
 		}
 	}
+
 ?>
 
 <html>
@@ -30,15 +32,24 @@
 		<link rel='stylesheet' href="stylesheet.css">
 	</head>
 <body>
+<form method="post">
+
 Your Cat So Far...
+
+	<div style='display:block; background-color:green'>
+		<!--<input type='submit' name='previewsubmit' value='Submit'>-->
+		<button type='submit' name='previewsubmit'>Submit</button>
+	</div>
 
 <?php
 echo "<div class='catfacediv' style='float:left; display:inline-block'>
 		<div style='position:absolute; background-image: url(".$maincolorurl.")' id='cookiecuttercatface' class:'catpart'> </div>
 	<div class='catprofilediv' style='float:right; display:inline-block'>
-					<div style='position: absolute; background-image: url(".$maincolorurl.");' id='cookiecuttercatprofile' class='catpart'> </div>"
+					<div style='position: absolute; background-image: url(".$maincolorurl.");' id='cookiecuttercatprofile' class='catpart'> </div"
 
 ?>
+
+</form>
 </body>
 </html>
 

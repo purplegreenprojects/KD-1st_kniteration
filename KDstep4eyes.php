@@ -5,7 +5,6 @@
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
-//what about cc? sometimes it will be cc=nocc; sometimes it will be cc=[something]
 
 	if(isset($arrayyarncolors)){
 		foreach ($arrayyarncolors as $color) {
@@ -15,6 +14,11 @@
 			if($color[0] == $_GET["cc"]) {
 				$ccurl = $color[1];
 			}
+
+			if("nocc" == $_GET["cc"]) {
+				$ccurl = "";
+			}
+			// ^figured that out all by myself - woot! Makes the error messages regarding ccurl go away (when you come from stepPREVIEW and the cc=nocc)
 		}
 	}
 
