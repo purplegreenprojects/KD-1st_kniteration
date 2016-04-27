@@ -1,0 +1,355 @@
+body {
+	background-color: #F8F8F8; 
+	text-align:center;
+	padding:0px;
+	margin: 0px;
+	border: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+input[type=checkbox] {
+	zoom: 200%;
+}
+
+.previewpages_leftside {
+	float:left;
+	width: calc(100% - 500px);
+	height: 100%;
+	display: inline-block;
+}
+
+/* Font Stuff */
+
+	.headings {
+		font-family:Pacifico, serif;
+		font-size: 36px;
+		line-height: 200%;
+	}
+	 
+	.subheadings {
+		font-family: Roboto Condensed, serif;
+		font-size: 24px;
+	}
+
+	.errormessage {
+		font-family: courier; 
+		font-size: 32px;
+		color: blue;
+		text-align: center; 
+	}
+
+	.hidden {
+		display:none;
+	}
+
+/* BUTTONS, FRAMES, LABELS, etc. */
+
+	.button_no-cc {
+		height:200px;
+		width: 300px;
+	}
+
+/* For ALL animals (bunnies, cats, etc.) */
+
+	.previewdiv_face {
+		height: 300px;
+		width: 300px;
+		background: gray;
+	  	background: -webkit-radial-gradient(white, #3385ff);
+	}
+
+	.previewdiv_profile {
+		height: 500px;
+		width: 500px;
+		background: gray;
+	  	background: -webkit-radial-gradient(white, #3385ff);
+	}
+
+/* Bunny */
+
+	.bunnypart_face {
+		position: absolute;
+		height: 300px;
+		width: 300px;
+		background-size: 120px auto;
+	}
+
+	.bunnypart_profile {
+		position: absolute;
+		height: 500px;
+		width: 500px;
+		background-size: 70px auto;
+	}
+
+	.bunnypart_backleg {
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		background-size: 100px auto;
+	}
+
+
+	/* 
+	still need to make clip-path
+	#bunnyface {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon(
+	} 
+	*/
+
+	#bunnyprofile {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon(
+	}
+
+	#bunnyprofile_backleg {
+		z-index: 5;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_backleg_line {
+		z-index: 4;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+		background-color: black;
+	}
+
+	#bunnyprofile_eye {
+		z-index: 9;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_nose {
+		z-index: 9;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+		background-color: pink;
+	}
+
+	#bunnyprofile_ear_back {
+		z-index: 1;
+	  	-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_ear_line {
+		z-index: 3;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+		background-color: black;
+	}
+
+	#bunnyprofile_ear_front {
+		z-index: 4;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_ear_inner {
+		z-index: 5;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_chin {
+		z-index: 3;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_stomach {
+		z-index: 3;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_tail_whole {
+		z-index: 3;
+		-webkit-clip-path:polygon();
+		clip-path: polygon();
+	}
+
+	#bunnyprofile_tail_half {
+		z-index: 4;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+/* Cat */
+
+	.catpart_face {
+		position: absolute;
+		height: 300px;
+		width: 300px;
+		background-size: 120px auto;
+	}
+
+	.catpart_profile {
+		position: absolute;
+		height: 500px;
+		width: 500px;
+		background-size: 70px auto;
+	}
+
+	#catface {
+		z-index: 1;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catface_nose {
+		z-index: 3;
+		-webkit-clip-path: polygon();
+	    clip-path: polygon();
+	    background-color: #ffaa80
+	}
+
+	#catface_nose_line {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+		background-color: black;
+	}
+
+	#catface_pupil_left {
+		z-index: 3;
+		-webkit-clip-path: circle();
+		clip-path: circle();
+		background-color:black;
+	}
+
+	#catface_pupil_right {
+		z-index: 3;
+		-webkit-clip-path: circle();
+		clip-path: circle();
+		background-color: black;
+	}
+
+	#catface_iris_left{
+	    z-index: 2;
+	    -webkit-clip-path: circle();
+	    clip-path: circle();
+	    background-color: white;
+	}
+
+	#catface_iris_right {
+		z-index: 2;
+		-webkit-clip-path: circle();
+		clip-path: circle();
+		background-color: white;
+	}
+
+	#catface_ear_left {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+
+	#catface_ear_right {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catface_chin {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+
+	#catface_nose-area {
+		z-index: 3;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catface_muzzle {
+		z-index: 4;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+
+	#catprofile {
+		z-index: 1;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_ears {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_nose-area {
+		z-index: 3;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_muzzle {
+		z-index: 4;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_stomach {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_chest {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_chin {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_paw_front_right {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_paw_front_left {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+
+	#catprofile_paw_back_right {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+	    clip-path: polygon();
+	}
+
+	#catprofile_paw_back_left {
+		z-index: 2;
+		-webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+	#catprofile_tail {
+		z-index: 2;
+	    -webkit-clip-path: polygon();
+		clip-path: polygon();
+	}
+
+ 

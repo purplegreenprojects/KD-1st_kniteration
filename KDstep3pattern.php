@@ -2,10 +2,6 @@
 	include("arrays.php");
 	$errormessage = "";
 
-	if(isset($_GET["cc"]) and ($_GET["cc"] == "nocc")) {
-		header("location: KDstepPREVIEW.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]);
-	}
-
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
@@ -21,12 +17,11 @@
 			}
 			if($color[0] == $_GET["cc"]) {
 				$ccurl = $color[1];
+			}		
+			if(isset($_GET["cc"]) and ($_GET["cc"] == "nocc")) {
+				header("location: KDstepPREVIEW.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]."&cc=nocc");
 			}
-
-			if ($_GET["cc"] == "nocc") {
-				header("location: KDstepPREVIEW.php");
-			}
-		}
+		}	
 	}
 
 //checkbox stuff - put in url
@@ -44,7 +39,7 @@ if(isset($_POST['previewbutton'])) {
 		if (isset($_POST[$chosen."_hide"])) {
 			$newstuff = $newstuff ."&".$chosen."_hide";
 		}
-	}	
+	} 	
 
 	header ("location: KDstep4eyes.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]."&cc=".$_GET["cc"].$newstuff);
 }

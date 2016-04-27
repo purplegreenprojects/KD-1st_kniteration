@@ -5,6 +5,7 @@
 	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}
+//what about cc? sometimes it will be cc=nocc; sometimes it will be cc=[something]
 
 	if(isset($arrayyarncolors)){
 		foreach ($arrayyarncolors as $color) {
@@ -17,8 +18,8 @@
 		}
 	}
 
-	if(isset($_POST['eyecolorsubmit'])) {
-		header ("location: KDfinalform.php");
+	if(isset($_POST["eyesubmit"])) {
+			header ("location: KDfinalform.php?item=".$_GET["item"]."&texture=".$_GET["texture"]."&maincolor=".$_GET["maincolor"]."&cc=".$_GET["cc"]."&lefteye=".$_GET["?"]."&righteye=".$_GET["?"]);
 	}
 
 ?>
@@ -34,6 +35,7 @@
 </head>
 
 <body>
+<form method='post'>
 	<div style='line-height: 200%'>
 		<div style='font-size:36px'>
 			<b> Step 4: Eyes </b>
@@ -84,20 +86,17 @@ $hidden = "hidden";
 //Left Eye Colors (Radio)
 			if (isset($_GET["lefteye"])) {
 				$lefteye_blue = "";
-				$lefteye_blue_picked = "picked";
 			}
 			elseif (isset($_GET["lefteye"])) {
 				$lefteye_green = "";
-				$lefteye_green_picked = "picked";
 			}
 			elseif (isset($_GET["lefteye"])) {
 				$lefteye_yellow = "";
-				$lefteye_yellow_picked = "picked";
 			}
 			else {
-				$lefteye_blue_picked = "";
-				$lefteye_green_picked = "";
-				$lefteye_yellow_picked = "";
+				$lefteye_blue = "hidden";
+				$lefteye_green = "hidden";
+				$lefteye_yellow = "hidden";
 			}
 //Right Eye Colors (Radio)
 			if (isset($_GET["righteye"])) {
@@ -140,26 +139,24 @@ $hidden = "hidden";
 echo "<div class='eyescheckboxesForm'>
 		<div style='height: 50%; width: 50%; display:inline-block;'> <b> Left Eye </b> <br> 
 
-			<input type='radio' name='lefteye_blue' ".$lefteye_blue_picked."> Blue
+			<input type='radio' name='lefteye' ".$lefteye_blue_picked."> Blue
 			<br>
-			<input type='radio' name='lefteye_green' ".$lefteye_green_picked."> Green
+			<input type='radio' name='lefteye' ".$lefteye_green_picked."> Green
 			<br>
-			<input type='radio' name='lefteye_yellow' ".$lefteye_yellow_picked."> Yellow
+			<input type='radio' name='lefteye' ".$lefteye_yellow_picked."> Yellow
 		</div><!--
 		--><div style='height:50%; width: 50%; display:inline-block'> <b> Right Eye </b> <br> 
 
-			<input type='radio' name='righteye_blue' ".$righteye_blue_picked."> Blue
+			<input type='radio' name='righteye' ".$righteye_blue_picked."> Blue
 			<br>
-			<input type='radio' name='righteye_green' ".$righteye_green_picked."> Green
+			<input type='radio' name='righteye' ".$righteye_green_picked."> Green
 			<br>
-			<input type='radio' name='righteye_yellow' ".$righteye_yellow_picked."> Yellow
+			<input type='radio' name='righteye' ".$righteye_yellow_picked."> Yellow
 		</div>
-
 		<div style='display:block; background-color:green'>
-			<input type='button' name='eyecolorsubmit' value='Submit'>
+			<input type='submit' name='eyesubmit' value='Submit'>
 		</div>
 	</div>"
-
 ?>
 </form>
 </body>

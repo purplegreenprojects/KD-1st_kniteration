@@ -2,7 +2,7 @@
 	include("arrays.php");
 	$errormessage = "";
 
-	if((isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
+	if((isset($_GET["cc"])) and (isset($_GET["maincolor"])) and (isset($_GET["texture"]))) {
  		$arrayyarncolors = ${"array".$_GET["texture"]."colors"};
 	}	
 
